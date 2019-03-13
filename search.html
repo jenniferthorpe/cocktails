@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cocktails</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"><img src="https://via.placeholder.com/200" alt="logo"></a>
+    <nav>
+      <div class="menu"><a href="./category/index.html">Kategorier</a>
+        <div class="menu-dd">
+          <a href="./category/champagne-cocktails.html">Champagne</a>
+          <a href="./category/gin-cocktails.html">Gin</a>
+          <a href="./category/rum-cocktails.html">Rom</a>
+          <a href="./category/tequila-cocktails.html">Tequila</a>
+          <a href="./category/vodka-cocktails.html">Vodka</a>
+          <a href="./category/whiskey-cocktails.html">Whiskey</a>
+        </div>
+      </div>
+      <div class="menu"><a href="./search.html">Sök</a></div>
+    </nav>
+  </header>
+  <main class="search-main">
+    <div class="search-bg-crop">
+      <div class="search-bg">
+        <input type="text" id="nameSearch" onkeyup="search()" placeholder="Search for a cocktail..">
+      </div>
+    </div>
+    <div class="checkboxField">
+      <p><b>Filtrera på ingredienser: </b></p>
+      <p><b>Alkohol:</b></p>
+      <input type="checkbox" class="filterSearch" value="vodka" onchange="filterValue(this)">Vodka
+      <input type="checkbox" class="filterSearch" value="vaniljvodka" onchange="filterValue(this)">Vaniljvodka
+      <input type="checkbox" class="filterSearch" value="agglikor" onchange="filterValue(this)">Ägglikör
+      <input type="checkbox" class="filterSearch" value="gingerbeer" onchange="filterValue(this)">Ginger Beer
+      <input type="checkbox" class="filterSearch" value="gingerale" onchange="filterValue(this)">Ginger Ale
+      <input type="checkbox" class="filterSearch" value="likor43" onchange="filterValue(this)">Likör 43
+      <input type="checkbox" class="filterSearch" value="tequila" onchange="filterValue(this)">Tequila<br>
+      <input type="checkbox" class="filterSearch" value="apelsinlikor" onchange="filterValue(this)">Apelsinlikör
+      <input type="checkbox" class="filterSearch" value="ljusrom" onchange="filterValue(this)">Ljus rom
+      <input type="checkbox" class="filterSearch" value="gin" onchange="filterValue(this)">Gin
+      <p><b>Tillbehör:</b> </p>
+      <input type="checkbox" class="filterSearch" value="grapefruktjuice" onchange="filterValue(this)">Grapefruktjuice
+      <input type="checkbox" class="filterSearch" value="tranbarsjuice" onchange="filterValue(this)">Tranbärsjuice
+      <input type="checkbox" class="filterSearch" value="passionsfruktjuice" onchange="filterValue(this)">Passionsfruktjuice
+      <input type="checkbox" class="filterSearch" value="apelsinjuice" onchange="filterValue(this)">Apelsinjuice
+      <input type="checkbox" class="filterSearch" value="citronjuice" onchange="filterValue(this)">Citronjuice<br>
+      <input type="checkbox" class="filterSearch" value="limejuice" onchange="filterValue(this)">Limejuice
+      <input type="checkbox" class="filterSearch" value="cocacola" onchange="filterValue(this)">Coca-cola
+      <input type="checkbox" class="filterSearch" value="7up" onchange="filterValue(this)">7up
+      <input type="checkbox" class="filterSearch" value="kaffe" onchange="filterValue(this)">Kaffe
+      <input type="checkbox" class="filterSearch" value="sockerlag" onchange="filterValue(this)">Sockerlag
+      <input type="checkbox" class="filterSearch" value="grenadin" onchange="filterValue(this)">Grenadin
+    </div>
+    <ul id="resultList">
+      <li>
+          <a href="./category/vodka-cocktails.html">
+        <p>Sea Breeze</p>
+        <div class="imgSearch">
+            <img src="./images/cocktail7_crop.jpg" alt=""></div></a>
+        <div class="filterIngredients" data='vodka'></div>
+        <div class="filterIngredients" data='grapefruktjuice'></div>
+        <div class="filterIngredients" data='tranbarsjuice'></div>
+      </li>
+      <li>
+          <a href="./category/vodka-cocktails.html">
+        <p>Snowball</p>
+        <div class="imgSearch">
+            <img style="bottom: 150px" src="./images/cocktail2.jpg" alt=""></div></a>
+        <div class="filterIngredients" data='agglikor'></div>
+        <div class="filterIngredients" data='vodka'></div>
+        <div class="filterIngredients" data='limejuice'></div>
+        <div class="filterIngredients" data='7up'></div>
+      </li>
+      <li>
+          <a href="./category/vodka-cocktails.html">
+        <p>Moscow mule</p>
+        <div class="imgSearch">
+            <img style="bottom: 170px" src="./images/cocktail15.jpg" alt=""></div></a>
+        <div class="filterIngredients" data='vodka'></div>
+        <div class="filterIngredients" data='limejuice'></div>
+        <div class="filterIngredients" data='gingerbeer'></div>
+      </li>
+      <li>
+          <a href="./category/vodka-cocktails.html">
+        <p>Vanilla Club</p>
+        <div class="imgSearch">
+            <img src="./images/cocktail13.jpg" alt=""></div></a>
+        <div class="filterIngredients" data='vaniljvodka'></div>
+        <div class="filterIngredients" data='limejuice'></div>
+        <div class="filterIngredients" data='gingerale'></div>
+      </li>
+      <li>
+          <a href="./category/tequila-cocktails.html">
+        <p>Mexikanskt Iskaffe</p>
+        <div class="imgSearch">
+            <img src="./images/cocktail4_crop.jpg" alt=""></div></a>
+        <div class="filterIngredients" data='likor43'></div>
+        <div class="filterIngredients" data='tequila'></div>
+        <div class="filterIngredients" data='kaffe'></div>
+        <div class="filterIngredients" data='sockerlag'></div>
+        <div class="filterIngredients" data='mjolk'></div>
+      </li>
+      <li>
+          <a href="./category/tequila-cocktails.html">
+        <p>Margerita</p>
+        <div class="imgSearch">
+            <img src="./images/cocktail16_crop.jpg" alt=""></div></a>
+        <div class="filterIngredients" data='tequila'></div>
+        <div class="filterIngredients" data='apelsinlikor'></div>
+        <div class="filterIngredients" data='limejuice'></div>
+      </li>
+      <li>
+          <a href="./category/tequila-cocktails.html">
+        <p>Mexiko Pacifico</p>
+        <div class="imgSearch">
+            <img src="./images/cocktail5_crop.jpg" alt="" style="bottom: 200px"></div></a>
+        <div class="filterIngredients" data='tequila'></div>
+        <div class="filterIngredients" data='passionsfruktjuice'></div>
+        <div class="filterIngredients" data='limejuice'></div>
+        <div class="filterIngredients" data='sockerlag'></div>
+      </li>
+      <li>
+          <a href="./category/tequila-cocktails.html">
+        <p>Tequila Sunrise</p>
+        <div class="imgSearch">
+            <img src="./images/cocktail8_crop.jpg" alt="" style="bottom: 200px"></div></a>
+        <div class="filterIngredients" data='tequila'></div>
+        <div class="filterIngredients" data='grenadin'></div>
+        <div class="filterIngredients" data='apelsinjuice'></div>
+      </li>
+      <li>
+          <a href="./category/tequila-cocktails.html">
+        <p>Long Island Iced Tea</p>
+        <div class="imgSearch">
+            <img src="./images/cocktail1_crop.jpg" alt="" style="bottom:250px"></div></a>
+        <div class="filterIngredients" data='ljusrom'></div>
+        <div class="filterIngredients" data='tequila'></div>
+        <div class="filterIngredients" data='gin'></div>
+        <div class="filterIngredients" data='vodka'></div>
+        <div class="filterIngredients" data='apelsinlikor'></div>
+        <div class="filterIngredients" data='sockerlag'></div>
+        <div class="filterIngredients" data='citronjuice'></div>
+        <div class="filterIngredients" data='limejuice'></div>
+        <div class="filterIngredients" data='cocacola'></div>
+        <div class="filterIngredients" data='7up'></div>
+      </li>
+    </ul>
+
+  </main>
+  <footer>
+    &copy;Jennifer Thorpe
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Laila:300,400,500,600,700');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: #d8b77f;
+    font-family: 'Laila', serif;
+    color: black;
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+
+/*HEADER OCH MENY*/
+
+header{
+    height: 100px;
+    background-color: black;
+}
+
+header > a {
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    left: 160px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    color: #D8B77F;
+}
+
+nav a{
+    color: #D8B77F;
+    font-size: 1.4em;
+}
+
+
+nav > div {
+    align-items: flex-start;
+    display: inline-block;
+    padding: 20px 0px;
+    margin: 18px 50px 0px;
+}
+
+
+.menu > a, .menu-dd > a{
+    padding: 20px;
+}
+
+
+.menu-dd > a {
+    display: block; 
+    font-size: 1.1em;
+    padding: 10px 25px;
+}
+
+.menu > a:hover, .menu-dd > a:hover, a:hover{
+    color: #009688;
+}
+
+.menu-dd{
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    top: 86px;
+}
+
+.menu:hover .menu-dd {
+    display: block;
+}
+
+/*MAIN*/
+
+main{
+    padding-bottom: 150px;
+    box-shadow: inset 0px 0px 60px 23px rgba(0,0,0,0.4);
+    color: black;
+    background-image: url(../images/pattern5.svg);
+    background-repeat: repeat-y;
+    background-size: 50%;
+    background-position: top left;
+    }
+
+figcaption {
+    font-size: 1.1em;
+}
+
+
+/*STARTSIDA & KATEGORIER*/
+
+.index-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 150px 40px;
+}
+
+.index-main > figure {
+    width: 25%;
+    height: 340px;
+    text-align: center;
+    margin: 0% 5%;
+}
+
+.img-crop, .img-crop-vodka {
+    width: 100%;
+    height: 74%;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 7px solid white;
+}
+
+.img-crop img, .img-crop-vodka img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 3px;
+}
+
+
+/*DRINKRECEPT*/
+
+.drinks-main{
+    padding-top: 70px;
+}
+
+.img-crop-drinks {
+    width: 270px;
+    height: 304px;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 5px solid black;
+}
+
+.img-crop-drinks > img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.flexbox > figure {
+    width: 25%;
+    text-align: center;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 250px;
+}
+
+.ingredients {
+    display: none;
+}
+
+
+
+/*SEARCH*/
+.search-main{
+    padding-top: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-bg-crop, .checkboxField {
+    width: 60%;
+    margin: 0% 20%;
+    height: 250px;
+}
+
+
+.search-bg{
+    background-image: url("../images/search-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 99% 53%;
+    background-size: 112%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.checkboxField{
+    height: 250px;
+}
+
+.checkboxField p {
+    margin: 10px 0px 0px;
+}
+
+input#nameSearch{
+    height: 50px;
+    border-radius: 3px;
+    font-family: 'Laila', serif;
+    border: none;
+    padding-left: 10px;
+}
+
+#nameSearch {
+    width: 30%;
+    margin: 100px 35%;
+}
+
+
+input.filerSearch {
+    position: top;
+}
+
+#resultList {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+#resultList p {
+    margin: 10px 0px 0px;
+}
+
+.imgSearch{
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.imgSearch img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 100px;
+}
+
+.filterIngredients {
+    display: none !important;
+}
+
+/*FOOTER*/
+
+footer {
+    color: #d8b77f;
+    background-color: black;
+    height: 20px;
+    font-size: 12px;
+    padding: 1px 30px;
+    text-align: right;
+}
