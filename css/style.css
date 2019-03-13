@@ -31,13 +31,6 @@ header{
     background-color: black;
 }
 
- header > a {
-    /* position: absolute;
-    z-index: 5;
-    top: 50px;
-    left: 160px; */
-} 
-
 .logo {
     width: 10%;
     position: absolute;
