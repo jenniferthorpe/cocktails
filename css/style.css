@@ -31,18 +31,18 @@ header{
     background-color: black;
 }
 
-header > a {
-    position: absolute;
+ header > a {
+    /* position: absolute;
     z-index: 5;
     top: 50px;
-    left: 160px;
-}
+    left: 160px; */
+} 
 
 .logo {
-    width: 80%;
-    position: relative;
-    top: -40px;
-    left: 250px;
+    width: 10%;
+    position: absolute;
+    top: 10px;
+    left: 350px;
 }
 
 
@@ -137,6 +137,7 @@ figcaption {
 
 .img-crop img, .img-crop-vodka img{
     width: 100%;
+    min-width: 360px;
     height: auto;
     position: relative;
     bottom: 3px;

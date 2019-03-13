@@ -44,7 +44,7 @@ function filterValue(element) {
 
 //Funktionen visar divarna med ingredienser när användaren klickar på bild/namn
 function showIngredients(num) {
-  let ingredients = document.getElementsByClassName("ingredients")[num]; //num används för att visa rätt div
+  let ingredients = document.getElementsByClassName("ingredients")[num]; //num används för att visa rätt rätt div
   if (ingredients.style.display === "none") {
     ingredients.style.display = "block";
   } else {
