@@ -38,6 +38,14 @@ header > a {
     left: 160px;
 }
 
+.logo {
+    width: 80%;
+    position: relative;
+    top: -40px;
+    left: 250px;
+}
+
+
 nav {
     display: flex;
     justify-content: center;
@@ -86,7 +94,7 @@ nav > div {
     display: block;
 }
 
-/*MAIN*/
+/*MAIN & FIGCAPTION*/
 
 main{
     padding-bottom: 150px;
@@ -196,10 +204,6 @@ figcaption {
     background-size: 112%;
     height: 100%;
     border-radius: 3px;
-}
-
-.checkboxField{
-    height: 250px;
 }
 
 .checkboxField p {
